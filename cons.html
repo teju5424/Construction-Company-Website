@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Company</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        /* Navigation Bar */
+        nav {
+            background-color: #1f3b64;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: url('imagesconstruction-hero.jpg.jpeg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero h1, .hero p, .hero .cta {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .hero .cta {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        
+        /* Services Overview */
+        .services-overview {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: white;
+        }
+        .services-overview h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service {
+            background: #e0e0e0;
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f3b64;
+            color: white;
+            margin-top: 20px;
+        }
+        .footer-info {
+            margin-top: 10px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .hero {
+                padding: 100px 20px;
+            }
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to Our Construction Company</h1>
+        <p>Building Your Dreams with Quality & Trust</p>
+        <a href="contact.html" class="cta">Get a Quote</a>
+    </section>
+    
+    <section class="services-overview">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Residential Construction</h3>
+                <p>Building your dream home with precision and quality.</p>
+            </div>
+            <div class="service">
+                <h3>Commercial Projects</h3>
+                <p>Reliable and efficient construction for businesses.</p>
+            </div>
+            <div class="service">
+                <h3>Renovation & Remodeling</h3>
+                <p>Enhance your spaces with our renovation expertise.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Construction Company. All rights reserved.</p>
+        <div class="footer-info">
+            <p>Email: dreamconstruction.gmail.com | Phone: +91 8765432344</p>
+        </div>
+    </footer>
+</body>
+</html>
+
